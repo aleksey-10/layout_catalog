@@ -1,4 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+html {
+  font-family: "Roboto", Arial, sans-serif; }
+
 body {
   margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.header {
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 50px;
+  height: 60px; }
+
+.logo {
+  height: 40px; }
+
+.nav {
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px; }
+  .nav__menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav__item {
+    margin-left: 20px; }
+    .nav__item:first-child {
+      margin-left: 0; }
+  .nav__link {
+    display: inline-block;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000; }
+  .nav__link:hover,
+  .nav .is-active {
+    color: #00acdc;
+    -webkit-transition: all 250ms;
+    transition: all 250ms; }
+  .nav .is-active {
+    position: relative; }
+    .nav .is-active::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      border-radius: 8px;
+      background-color: #00acdc; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto 0; }
+
+.card {
+  margin: 0 24px 50px;
+  width: 200px;
+  padding: 15px 14px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .card__img {
+    margin: 15px auto;
+    width: 160px;
+    height: 134px; }
+  .card__title {
+    margin: 30px auto 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px; }
+  .card__code {
+    margin-bottom: 14px; }
+  .card .small {
+    font-size: 11px;
+    line-height: 13px; }
+  .card .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .card .rating__stars {
+      height: 15px;
+      width: 91px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .card .rating__star {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background-image: url(../images/star-active.svg);
+      background-repeat: no-repeat;
+      background-position: center; }
+    .card .rating__star:last-child {
+      background-image: url(../images/star.svg); }
+  .card .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 18px 0 20px; }
+    .card .price .small {
+      margin-bottom: 1px; }
+    .card .price__value {
+      margin: 1px 0 0;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px; }
+  .card__btn-purchase {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40px;
+    width: 170px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #00acdc;
+    border-radius: 5px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s; }
+    .card__btn-purchase:hover {
+      background-color: #fff;
+      border: 1px solid #00acdc;
+      color: #00acdc;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s; }
 
 /*# sourceMappingURL=main.css.map */
