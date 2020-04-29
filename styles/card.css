@@ -98,8 +98,6 @@
     .card__btn-purchase:hover {
       background-color: #fff;
       border: 1px solid #00acdc;
-      color: #00acdc;
-      -webkit-transition: all 0.25s;
-      transition: all 0.25s; }
+      color: #00acdc; }
 
 /*# sourceMappingURL=card.css.map */

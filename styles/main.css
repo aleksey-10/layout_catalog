@@ -37,12 +37,12 @@
     display: inline-block;
     line-height: 60px;
     text-decoration: none;
-    color: #000; }
-  .nav__link:hover,
-  .nav .is-active {
-    color: #00acdc;
+    color: #000;
     -webkit-transition: all 250ms;
     transition: all 250ms; }
+  .nav__link:hover,
+  .nav .is-active {
+    color: #00acdc; }
   .nav .is-active {
     position: relative; }
     .nav .is-active::after {
@@ -155,9 +155,7 @@
     .card__btn-purchase:hover {
       background-color: #fff;
       border: 1px solid #00acdc;
-      color: #00acdc;
-      -webkit-transition: all 0.25s;
-      transition: all 0.25s; }
+      color: #00acdc; }
 
 html {
   font-family: "Roboto", Arial, sans-serif; }
