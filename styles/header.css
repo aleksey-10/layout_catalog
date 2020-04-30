@@ -13,8 +13,9 @@
           align-items: center;
   padding: 24px 50px;
   height: 60px; }
-  .header .logo {
-    height: 40px; }
+
+.logo {
+  height: 40px; }
 
 .nav {
   font-weight: 500;
@@ -39,19 +40,20 @@
     color: #000;
     -webkit-transition: all 250ms;
     transition: all 250ms; }
-  .nav__link:hover,
-  .nav .is-active {
+  .nav__link:hover {
     color: #00acdc; }
-  .nav .is-active {
-    position: relative; }
-    .nav .is-active::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      border-radius: 8px;
-      background-color: #00acdc; }
+
+.is-active {
+  position: relative;
+  color: #00acdc; }
+  .is-active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #00acdc; }
 
 /*# sourceMappingURL=header.css.map */
