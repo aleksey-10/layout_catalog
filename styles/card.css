@@ -24,7 +24,9 @@
     font-size: 12px;
     line-height: 15px; }
   .card__code {
-    margin-bottom: 14px; }
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 13px; }
   .card__btn-purchase {
     text-decoration: none;
     text-transform: uppercase;
@@ -51,10 +53,6 @@
       border: 1px solid #00acdc;
       color: #00acdc; }
 
-.small {
-  font-size: 11px;
-  line-height: 13px; }
-
 .rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,6 +63,9 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  .rating__comments {
+    font-size: 11px;
+    line-height: 13px; }
 
 .stars {
   width: 91px;
@@ -107,6 +108,9 @@
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 18px 0 20px; }
+  .price__cost {
+    font-size: 11px;
+    line-height: 13px; }
   .price__value {
     margin: 1px 0 0;
     font-weight: bold;
