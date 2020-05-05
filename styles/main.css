@@ -71,15 +71,14 @@
     right: 0;
     top: 60px; }
   .nav__toggler {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
   .nav__toggler:not(:checked) ~ .nav__menu {
     display: none; }
   .nav__item {
     margin: 5px 20px; } }
 
 .card {
-  margin: 0 24px 50px;
-  width: 200px;
   padding: 15px 14px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -207,14 +206,18 @@ body {
           box-sizing: border-box; }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 50px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px auto 0; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 50px auto; }
+
+@media (max-width: 1023px) {
+  .main {
+    grid-template-columns: repeat(auto-fit, 200px); } }
 
 /*# sourceMappingURL=main.css.map */
